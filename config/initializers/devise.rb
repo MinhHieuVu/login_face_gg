@@ -11,6 +11,8 @@
 Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
   config.omniauth :facebook, "618460326569419", "56d04f4b8239b8af22eecefca565a186"
+  config.omniauth :google_oauth2, "1036935879714-jikehao5pms1nilcfei9hr80jhh3usg6.apps.googleusercontent.com", "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", scope: 'email', info_fields: 'email'
+
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
